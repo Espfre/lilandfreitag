@@ -1,7 +1,7 @@
 <?php
-include "core/init.php";
-include "includes/overall/header.php";
-
+include 'core/database/connect.php';
+include 'core/init.php';
+include 'includes/overall/header.php';
 ?>
 
 		<h1>Home</h1>
@@ -11,4 +11,5 @@ include "includes/overall/header.php";
 		<br>
 		<h1>News</h1>
 		<p>here we can post something like news and updates</p>
+
 <?php include "includes/overall/footer.php";?>
