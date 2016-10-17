@@ -4,8 +4,8 @@
 		<form action='login.php' method='post'>
 			<ul id='login'>
 				<li>
-					Username:<br>
-					<input type='text' name='username'>
+					Email:<br>
+					<input type='text' name='email'>
 				</li>
 				<li>
 					Password:<br>
