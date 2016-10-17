@@ -1,9 +1,14 @@
 <?php
-//connect to mysql
-try {
-	$db = new PDO('mysql:host=localhost;dbname=lilandfreitag;charset=utf8mb4', 'root', '',
-	array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-} catch(PDOException $ex) {
-	echo 'We\'re having connection issues';
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+	 die('We seem to have connection issues: ' . mysqli_connect_error());
 }
+echo "Connected successfully";
 ?>
