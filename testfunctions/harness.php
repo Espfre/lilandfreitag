@@ -1,11 +1,11 @@
 <?php
-// connect to the database
+// test harness for connect.php library
 
 require_once "/opt/lampp/htdocs/lilandfreitag/core/database/dbinfo.php";
 
 try {
 	$dbh = database::connect ();
-	print ("Connected\n");
+	echo ("Connected\n");
 }
 catch (PDOException $e) {
 	print ("Cannot connect to server\n");
@@ -13,4 +13,7 @@ catch (PDOException $e) {
 	print ("Error message: " . $e->getMessage () . "\n");
 	exit (1);
 }
+$dbh = NULL;
+print ("Disconnected\n");
+
 ?>

@@ -15,11 +15,6 @@
 					<input type='submit' value='Log in'>
 				</li>
 				<li>
-					<strong>Acount Type:</strong>
-					<input type='radio' name='acount type' value='company'>Company
-					<input type='radio' name='acount type' calue='worker'>Worker
-				</li>
-				<li>
 					<a href='register.php'>Register</a>
 				</li>
 			</ul>
